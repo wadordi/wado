@@ -1,10 +1,14 @@
-
+// SPDX-License-Identifer: GPL-3.0
+/*
+ * Copyright (C) 2020 Tomoki.Terasawa. All rights reserved 
+  */
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
 #include <linux/device.h>
 #include <linux/uaccess.h>
 #include <linux/io.h>
+#include <linux/delay.h>
 
 MODULE_AUTHOR("Ryuichi Ueda & Tomoki Terasawa");
 MODULE_DESCRIPTION("driver for LED control");
@@ -20,6 +24,7 @@ static volatile u32 *gpio_base = NULL;
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
 	char c;
+	int i;
 	if(copy_from_user(&c,buf,sizeof(char)))
 	return -EFAULT;
 
@@ -39,6 +44,47 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		gpio_base[7] = 1 << 22;
 
 	}
+	else if(c == 'r'){
+		for(i = 0;i < 20; i++){
+		gpio_base[7] = 1 << 25;
+		gpio_base[10] = 1 << 23;
+		msleep(200);
+		gpio_base[7] = 1 << 24;
+		gpio_base[10] = 1 << 22;
+		msleep(200);
+		gpio_base[7] = 1 << 23;
+		gpio_base[10] = 1 << 25; 
+		msleep(200);
+		gpio_base[7] = 1 << 22;
+		gpio_base[10] = 1 << 24;
+		msleep(200);
+		}
+		gpio_base[10] = 1 << 23;
+		msleep(200);
+		gpio_base[10] = 1 << 22;
+	}
+		
+	
+	else if(c == 'l'){
+		for(i = 0;i < 20; i++){
+		gpio_base[7] = 1 << 25;
+		gpio_base[10] = 1 << 23;
+		msleep(200);
+		gpio_base[7] = 1 << 22;
+		gpio_base[10] = 1 << 24;
+		msleep(200);
+		gpio_base[7] = 1 << 23;
+		gpio_base[10] = 1 << 25; 
+		msleep(200);
+		gpio_base[7] = 1 << 24;
+		gpio_base[10] = 1 << 22;
+		msleep(200);
+		}
+		gpio_base[10] = 1 << 23;
+		msleep(200);
+		gpio_base[10] = 1 << 24;
+	}
+
 	return 1;
 }
 static ssize_t sushi_read(struct file* filp, char* buf, size_t count, loff_t*pos)
