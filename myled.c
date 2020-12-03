@@ -84,6 +84,40 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		msleep(200);
 		gpio_base[10] = 1 << 24;
 	}
+	else if(c == 'a' || c == 'b' || c == 'c'){
+		if(c == 'a'){a = 10;}
+		if(c == 'b'){a = 30;}
+		if(c == 'c'){a = 60;}
+		for(i = 0; i < a; i++){
+		
+		gpio_base[7] = 1 << 25;
+		gpio_base[10] = 1 << 23;
+		msleep(240);
+		gpio_base[7] = 1 << 24;
+		gpio_base[10] = 1 << 22;
+		msleep(240);
+		gpio_base[7] = 1 << 23;
+		gpio_base[10] = 1 << 25; 
+		msleep(240);
+		gpio_base[7] = 1 << 22;
+		gpio_base[10] = 1 << 24;
+		msleep(240);
+		}
+		for(i = 0;i < 100; i++){
+		gpio_base[7] = 1 << 25;
+		gpio_base[7] = 1 << 24;
+		gpio_base[7] = 1 << 23;
+		gpio_base[7] = 1 << 22;
+		msleep(50);
+
+		gpio_base[10] = 1 << 25;
+		gpio_base[10] = 1 << 24;
+		gpio_base[10] = 1 << 23;
+		gpio_base[10] = 1 << 22;
+		msleep(50);
+		}
+		
+	}
 	/*else if(c == 'a'){
 		for(i=0;i < 8; i++){
 		a = rand()% 4 + 1;
