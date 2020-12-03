@@ -17,9 +17,11 @@ https://user-images.githubusercontent.com/72900623/100959079-dca70d00-3560-11eb-
 
 画像で見て上のLEDをGPIO25,右のLEDをGPIO24,下のLEDをGPIO23,左のLEDをGPIO22にそれぞれに抵抗を付けて接続しています。
 
-# 実行方法
-* git clone 
-* 
-* 
-* 
-* 
+# 実行の準備
+実行までの準備は以下の手順で行ってください。
+* git clone https://github.com/wadordi/wado.git
+* cd wado
+* make
+* sudo rmmod myled
+* sudo insmod myled.ko
+* sudo chmod 666 /dev/myled0
