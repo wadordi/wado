@@ -14,3 +14,12 @@
 
 # 回路について
 https://user-images.githubusercontent.com/72900623/100959079-dca70d00-3560-11eb-949b-e033697de465.jpg
+
+画像で見て上のLEDをGPIO25,右のLEDをGPIO24,下のLEDをGPIO23,左のLEDをGPIO22にそれぞれに抵抗を付けて接続しています。
+
+# 実行方法
+* git clone 
+* 
+* 
+* 
+* 
