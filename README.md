@@ -13,4 +13,4 @@
 * 抵抗220Ω　4個
 
 # 回路について
-file:///C:/Users/kmwd6/OneDrive/%E7%94%BB%E5%83%8F/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%AD%A6%E3%80%80%E8%AA%B2%E9%A1%8C%EF%BC%91%E3%80%80%E5%9B%9E%E8%B7%AF.jpg
+https://user-images.githubusercontent.com/72900623/100959079-dca70d00-3560-11eb-949b-e033697de465.jpg
