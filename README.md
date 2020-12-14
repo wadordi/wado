@@ -47,3 +47,4 @@ https://youtu.be/PlpwtSiH110
 'a'、'b'、'c'と入力した場合は1秒でLEDの光が回転し時間になるとすべてのLEDが点滅します。
 
 ##ライセンス
+GNU General Public License v3.0
