@@ -38,6 +38,7 @@ https://youtu.be/PlpwtSiH110
 * sudo insmod myled.ko
 * sudo chmod 666 /dev/myled0
 * echo 1 > /dev/myled0 
+
 LEDが'0'で消灯、'1'で全点灯、'r'で右回りに点灯、'l'で左回りに点灯、'a'で10秒のタイマー、'b'で30秒のタイマー、'c'で60秒のタイマーといった具合です。
 ### rを入力した場合
 https://youtu.be/DAnRMG6kbvo
