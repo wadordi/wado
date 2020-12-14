@@ -28,16 +28,16 @@ https://youtu.be/PlpwtSiH110
 画像で見て上のLEDをGPIO25,右のLEDをGPIO24,下のLEDをGPIO23,左のLEDをGPIO22にそれぞれに抵抗を付けて接続しています。
 
 ## インストール方法
-'git clone https://github.com/wadordi/wado.git'
+`git clone https://github.com/wadordi/wado.git`
 
 ## 使用方法
 以下のように入力してください。echoの後の文字によって動作が変わります。
-* cd wado
-* make
-* sudo rmmod myled
-* sudo insmod myled.ko
-* sudo chmod 666 /dev/myled0
-* echo 1 > /dev/myled0 
+`cd wado`
+`make`
+`sudo rmmod myled`
+`sudo insmod myled.ko`
+`sudo chmod 666 /dev/myled0`
+`echo 1 > /dev/myled0` 
 
 LEDが'0'で消灯、'1'で全点灯、'r'で右回りに点灯、'l'で左回りに点灯、'a'で10秒のタイマー、'b'で30秒のタイマー、'c'で60秒のタイマーといった具合です。
 ### rを入力した場合
