@@ -47,5 +47,4 @@ https://youtu.be/PlpwtSiH110
 'a'、'b'、'c'と入力した場合は1秒でLEDの光が回転し時間になるとすべてのLEDが点滅します。
 
 ## ライセンス
- "wado" is under [GPL](http://www.gnu.org/licenses/gpl-3.0.html).
- 
+"wado" is under [GPL](http://www.gnu.org/licenses/gpl-3.0.html).
