@@ -28,7 +28,7 @@ https://youtu.be/PlpwtSiH110
 画像で見て上のLEDをGPIO25,右のLEDをGPIO24,下のLEDをGPIO23,左のLEDをGPIO22にそれぞれに抵抗を付けて接続しています。
 
 ## インストール方法
-* git clone https://github.com/wadordi/wado.git
+'git clone https://github.com/wadordi/wado.git'
 
 ## 使用方法
 以下のように入力してください。echoの後の文字によって動作が変わります。
