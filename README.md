@@ -46,6 +46,6 @@ https://youtu.be/DAnRMG6kbvo
 https://youtu.be/PlpwtSiH110
 'a'、'b'、'c'と入力した場合は1秒でLEDの光が回転し時間になるとすべてのLEDが点滅します。
 
-##ライセンス
+## ライセンス
 SPDX-License-Identifer: GPL-3.0
 Copyright (C) 2020 Tomoki.Terasawa. All rights reserved 
