@@ -31,7 +31,7 @@ https://youtu.be/PlpwtSiH110
 `git clone https://github.com/wadordi/wado.git`
 
 ## 使用方法
-以下のように入力してください。echoの後の文字によって動作が変わります。
+以下のように入力してください。echoの後の文字によって動作が変わります。  
 `cd wado`  
 `make`  
 `sudo rmmod myled`  
