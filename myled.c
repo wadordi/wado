@@ -46,18 +46,18 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 	}
 	else if(c == 'r'){
 		for(i = 0;i < 20; i++){
-		gpio_base[7] = 1 << 25;
-		gpio_base[10] = 1 << 23;
-		msleep(200);
-		gpio_base[7] = 1 << 24;
-		gpio_base[10] = 1 << 22;
-		msleep(200);
-		gpio_base[7] = 1 << 23;
-		gpio_base[10] = 1 << 25; 
-		msleep(200);
-		gpio_base[7] = 1 << 22;
-		gpio_base[10] = 1 << 24;
-		msleep(200);
+			gpio_base[7] = 1 << 25;
+			gpio_base[10] = 1 << 23;
+			msleep(200);
+			gpio_base[7] = 1 << 24;
+			gpio_base[10] = 1 << 22;
+			msleep(200);
+			gpio_base[7] = 1 << 23;
+			gpio_base[10] = 1 << 25; 
+			msleep(200);
+			gpio_base[7] = 1 << 22;
+			gpio_base[10] = 1 << 24;
+			msleep(200);
 		}
 		gpio_base[10] = 1 << 23;
 		msleep(200);
@@ -67,18 +67,18 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 	
 	else if(c == 'l'){
 		for(i = 0;i < 20; i++){
-		gpio_base[7] = 1 << 25;
-		gpio_base[10] = 1 << 23;
-		msleep(200);
-		gpio_base[7] = 1 << 22;
-		gpio_base[10] = 1 << 24;
-		msleep(200);
-		gpio_base[7] = 1 << 23;
-		gpio_base[10] = 1 << 25; 
-		msleep(200);
-		gpio_base[7] = 1 << 24;
-		gpio_base[10] = 1 << 22;
-		msleep(200);
+			gpio_base[7] = 1 << 25;
+			gpio_base[10] = 1 << 23;
+			msleep(200);
+			gpio_base[7] = 1 << 22;
+			gpio_base[10] = 1 << 24;
+			msleep(200);
+			gpio_base[7] = 1 << 23;
+			gpio_base[10] = 1 << 25; 
+			msleep(200);
+			gpio_base[7] = 1 << 24;
+			gpio_base[10] = 1 << 22;
+			msleep(200);
 		}
 		gpio_base[10] = 1 << 23;
 		msleep(200);
@@ -89,32 +89,31 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		if(c == 'b'){a = 30;}
 		if(c == 'c'){a = 60;}
 		for(i = 0; i < a; i++){
-		
-		gpio_base[7] = 1 << 25;
-		gpio_base[10] = 1 << 23;
-		msleep(240);
-		gpio_base[7] = 1 << 24;
-		gpio_base[10] = 1 << 22;
-		msleep(240);
-		gpio_base[7] = 1 << 23;
-		gpio_base[10] = 1 << 25; 
-		msleep(240);
-		gpio_base[7] = 1 << 22;
-		gpio_base[10] = 1 << 24;
-		msleep(240);
+			gpio_base[7] = 1 << 25;
+			gpio_base[10] = 1 << 23;
+			msleep(240);
+			gpio_base[7] = 1 << 24;
+			gpio_base[10] = 1 << 22;
+			msleep(240);
+			gpio_base[7] = 1 << 23;
+			gpio_base[10] = 1 << 25; 
+			msleep(240);
+			gpio_base[7] = 1 << 22;
+			gpio_base[10] = 1 << 24;
+			msleep(240);
 		}
 		for(i = 0;i < 100; i++){
-		gpio_base[7] = 1 << 25;
-		gpio_base[7] = 1 << 24;
-		gpio_base[7] = 1 << 23;
-		gpio_base[7] = 1 << 22;
-		msleep(50);
+			gpio_base[7] = 1 << 25;
+			gpio_base[7] = 1 << 24;
+			gpio_base[7] = 1 << 23;
+			gpio_base[7] = 1 << 22;
+			msleep(50);
 
-		gpio_base[10] = 1 << 25;
-		gpio_base[10] = 1 << 24;
-		gpio_base[10] = 1 << 23;
-		gpio_base[10] = 1 << 22;
-		msleep(50);
+			gpio_base[10] = 1 << 25;
+			gpio_base[10] = 1 << 24;
+			gpio_base[10] = 1 << 23;
+			gpio_base[10] = 1 << 22;
+			msleep(50);
 		}
 		
 	}
